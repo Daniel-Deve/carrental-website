@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX MOTORS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+         <!-- favicon -->
+         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+         <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+         <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="tel:+1234567890">📞 +1234567890</a>
+            <a href="mailto:example@gmail.com">✉️ example@gmail.com</a>
+        </div>
+        <div class="navbar-right">
+            <div class="currency-dropdown">
+                <select>
+                    <option value="usd">USD ($)</option>
+                    <option value="eur">EUR (€)</option>
+                    <option value="gbp">GBP (£)</option>
+                    <option value="ngn">NGN (N)</option>
+                </select>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </div>
+        </div>
+    </header>    
+
+    <nav class="main-navbar">
+        <a href="#" class="logo">
+            <div class="logo-container">
+                <i class="fa-solid fa-car"></i> 
+                <span>APEX MOTORS</span>
+            </div> 
+        </a>
+    
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="listings.html">Listings</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+          
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+    </script>
+
+
+<!-- section1 -->
+<section class="car-search">
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="video/5309378-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="overlay"></div> 
+    <div class="content">
+        <h1>Find Your Desired Car</h1>
+        <p>You can get your desired awesome different types of cars here by name, category, or brand.</p>
+        
+        <form class="search-form">
+            <button type="button" class="find-btn">Find Anything</button>
+
+            <select>
+                <option>Select Location</option>
+                <option>New York</option>
+                <option>Los Angeles</option>
+                <option>Chicago</option>
+            </select>
+
+            <select>
+                <option>Select Brand</option>
+                <option>Toyota</option>
+                <option>Honda</option>
+                <option>Ford</option>
+            </select>
+
+            <select>
+                <option>Select Type</option>
+                <option>SUV</option>
+                <option>Toyota Camry</option>
+                <option>Mazda</option>
+            </select>
+
+            <button type="submit" class="search-btn">Search</button>
+        </form>
+    </div>
+</section>
+
+
+
+
+<!-- my car gallery -->
+<section class="car-gallery">
+    <h2>Explore Our Cars</h2>
+    <div class="grid-container">
+        <div class="car-box">
+            <img src="image folders/3fa4918a87203c2b8a4f1f773bc08d74.jpg" alt="Toyota Camry">
+            <p>Toyota Camry</p>
+        </div>
+        <div class="car-box">
+            <img src="image folders/25aab7366ea773e85be7b731e25d5d75.jpg" alt="lamborghini">
+            <p>lamborghini</p>
+        </div>
+        <div class="car-box">
+            <img src="image folders/2bc74c80d17eebacf1de098186e028b0.jpg" alt="mazda">
+            <p>mazda</p>
+        </div>
+        <div class="car-box">
+            <img src="image folders/bdef15bf04bb381858b82f34216035a3.jpg" alt="porsche">
+            <p>porsche</p>
+        </div>
+        <div class="car-box">
+            <img src="image folders/13d509467d021397f17e943cb68b750c.jpg" alt="BMW M3">
+            <p>BMW M3</p>
+        </div>
+        <div class="car-box">
+            <img src="image folders/ecda20d11a98085670055e0935530a27.jpg" alt="jaguar">
+            <p>jaguar</p>
+        </div>
+        <div class="car-box">
+            <img src="image folders/abf8e2d9e822fc23acd219246c658e2c.jpg" alt="volkswagen">
+            <p>volkswagen</p>
+        </div>
+        <div class="car-box">
+            <img src="image folders/images (1).jpg" alt="Tesla Model S">
+            <p>Tesla Model S</p>
+        </div>
+    </div>
+</section>
+
+  <!-- Video Section -->
+  <section class="section-container">
+    <div class="overlay">
+        <h1>Car Listing Instruction Video</h1>
+        <p>You can submit your car on this website. But before submission, we suggest you view our video guideline, and we are sure it will help you very much to understand the review and submission process.</p>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/nSESMoHgItM?rel=0&controls=0&modestbranding=1&showinfo=0" 
+                title="Instruction Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+  </section>
+
+
+<!-- section for six cars -->
+  <section class="featured-cars-section">
+    <h2>FEATURED CARS</h2>
+    <p>See all the popular cars from below</p>
+</section>
+
+<section class="cars-list">
+    <div class="car-item">
+        <div class="car-image-container">
+            <i class="fas fa-heart love-icon"></i>
+            <img src="image folders/3bb970bc46e0a47b20bd0efeda35d14d.jpg" alt="Car Image">
+        </div>
+        <div class="car-details">
+            <div class="car-price">$12,500</div>
+            <div class="car-name">mazda mazda5 sport</div>
+            <div class="car-reviews">⭐⭐⭐⭐⭐</div>
+            <div class="car-location">New York, USA</div>
+        </div>
+    </div>
+    
+    <div class="car-item">
+        <div class="car-image-container">
+            <i class="fas fa-heart love-icon"></i>
+            <img src="image folders/657e270e48cebafa381b724042c03f63.jpg" alt="Car Image">
+        </div>
+        <div class="car-details">
+            <div class="car-price">$30,000</div>
+            <div class="car-name">mazda  M340i</div>
+            <div class="car-reviews">⭐⭐⭐⭐</div>
+            <div class="car-location">Los Angeles, USA</div>
+        </div>
+    </div>
+
+
+
+    <div class="car-item">
+        <div class="car-image-container">
+            <i class="fas fa-heart love-icon"></i>
+            <img src="image folders/be19037990394911430d0994c988ad15.jpg" alt="Car Image">
+        </div>
+        <div class="car-details">
+            <div class="car-price">$243,000</div>
+            <div class="car-name">lamborghini Urus Base</div>
+            <div class="car-reviews">⭐⭐⭐⭐</div>
+            <div class="car-location">Los Angeles, USA</div>
+        </div>
+    </div>
+
+
+    <div class="car-item">
+        <div class="car-image-container">
+            <i class="fas fa-heart love-icon"></i>
+            <img src="image folders/7d29e4eb6fd995ec98f8465e927f1006.jpg" alt="Car Image">
+        </div>
+        <div class="car-details">
+            <div class="car-price">$28,990</div>
+            <div class="car-name">volkswagen e-golf</div>
+            <div class="car-reviews">⭐⭐⭐⭐</div>
+            <div class="car-location">Los Angeles, USA</div>
+        </div>
+    </div>
+
+    <div class="car-item">
+        <div class="car-image-container">
+            <i class="fas fa-heart love-icon"></i>
+            <img src="image folders/de51e0ec9808b68b5cad2aa3ae33c739.jpg" alt="Car Image">
+        </div>
+        <div class="car-details">
+            <div class="car-price">$48,000</div>
+            <div class="car-name">BMW</div>
+            <div class="car-reviews">⭐⭐⭐⭐⭐</div>
+            <div class="car-location">Miami, USA</div>
+        </div>
+    </div>
+
+    <div class="car-item">
+        <div class="car-image-container">
+            <i class="fas fa-heart love-icon"></i>
+            <img src="image folders/2bf25c0c094e8963d3bb24109cf2beed (1).jpg" alt="Car Image">
+        </div>
+        <div class="car-details">
+            <div class="car-price">$23,850</div>
+            <div class="car-name">Nissan Murano S</div>
+            <div class="car-reviews">⭐⭐⭐⭐</div>
+            <div class="car-location">Chicago, USA</div>
+        </div>
+    </div>
+
+    <div class="car-item">
+        <div class="car-image-container">
+            <i class="fas fa-heart love-icon"></i>
+            <img src="image folders/75b6c2d5b103423197c0836e61087979.jpg" alt="Car Image">
+        </div>
+        <div class="car-details">
+            <div class="car-price">$66,698</div>
+            <div class="car-name">BMW X5</div>
+            <div class="car-reviews">⭐⭐⭐⭐⭐</div>
+            <div class="car-location">Houston, USA</div>
+        </div>
+    </div>
+
+    <div class="car-item">
+        <div class="car-image-container">
+            <i class="fas fa-heart love-icon"></i>
+            <img src="image folders/2023_Mercedes-Benz_AMG_C_43_Angular_Front_1.jpg" alt="Car Image">
+        </div>
+        <div class="car-details">
+            <div class="car-price">$35,500</div>
+            <div class="car-name">Mercedes-Benz C-Class</div>
+            <div class="car-reviews">⭐⭐⭐⭐</div>
+            <div class="car-location">San Francisco, USA</div>
+        </div>
+    </div>
+</section>
+
+<!-- about section -->
+
+
+<section id="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="image folders/c05257ca738dd4b947f291f6096c5b5e.jpg" alt="Apex Motors - Car Rental and Sales Service" loading="lazy">
+        </div>
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>
+                Welcome to <strong>Apex Motors Rentals & Sales</strong>, your trusted destination for top-quality car rentals and sales. 
+                Whether you're looking for a short-term rental or planning to purchase your dream car, we offer a wide selection of 
+                well-maintained vehicles to meet your needs.
+            </p>
+            <p>
+                Our commitment to excellence ensures that every customer enjoys a smooth and hassle-free experience. With flexible rental 
+                plans, competitive pricing, and a diverse inventory of cars, we guarantee the perfect vehicle for any occasion.
+            </p>
+            <p><strong>Why Choose Us?</strong></p>
+            <div class="about-list">
+                <ul>
+                    <li>✔ Affordable and flexible rental options</li>
+                    <li>✔ A diverse selection of vehicles for rent & sale</li>
+                    <li>✔ Well-maintained and high-quality cars</li>
+                    <li>✔ Easy financing options for car purchases</li>
+                    <li>✔ 24/7 customer support & assistance</li>
+                </ul>
+            </div>
+            <a href="contact.html" class="btn">Get in Touch</a>
+        </div>
+    </div>
+</section>
+
+
+    
+
+
+
+
+ <!-- testimonial section -->
+ <div class="testimonial-container">
+    <h1>Testimonial</h1>
+    <p>What our clients say about us</p>
+    <div class="testimonial-box">
+        <img src="image folders/testy3-1.png" alt="Client Image" class="client-img">
+        <p class="testimonial-text">"This company exceeded my expectations. Their service was excellent and the car they have is simply amazing!"</p>
+        <div class="client-name">John Doe</div>
+        <div class="client-signature">- John Doe</div>
+    </div>
+</div>
+
+
+
+ <!-- location section -->
+<section class="container-card">
+    <h2>Locations</h2>
+    <p>Please see all the car locations from here</p>
+    <div class="grid">
+        <div class="card">
+            <img src="image folders/76729b551dd233ab8e1e4d4ccfa894d3.jpg" alt="City 1">
+            <div class="card-content">
+                <p class="city">Los Angeles</p>
+                <p class="listings">4 Listings</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image folders/13ec36fb7431b072dd2d0dedcb9a0327.jpg" alt="City 2">
+            <div class="card-content">
+                <p class="city">Chicago</p>
+                <p class="listings">2 Listings</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image folders/8c252c3932d5514d03df53ef2bf2f578.jpg" alt="City 3">
+            <div class="card-content">
+                <p class="city">San Diego</p>
+                <p class="listings">1 Listings</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image folders/be19037990394911430d0994c988ad15.jpg" alt="City 4">
+            <div class="card-content">
+                <p class="city">New York</p>
+                <p class="listings">1 Listings</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image folders/7f2a3cc598783d96c6cb38822f297c4e.jpg" alt="City 5">
+            <div class="card-content">
+                <p class="city">Boston</p>
+                <p class="listings">3 Listings</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image folders/da979a83a7ee727dd73f0fc30bbb4ee0.jpg" alt="City 6">
+            <div class="card-content">
+                <p class="city">Denver</p>
+                <p class="listings">2 Listings</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image folders/c9aaf9f4f384a986e92630aee5a729c3.jpg" alt="City 7">
+            <div class="card-content">
+                <p class="city">Seattle</p>
+                <p class="listings">5 Listings</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image folders/eb44f9a13791129efbf73b6557bb6301.jpg" alt="City 8">
+            <div class="card-content">
+                <p class="city">Miami</p>
+                <p class="listings">4 Listings</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">BMW</a></li>
+                <li><a href="#">Jaguar</a></li>
+                <li><a href="#">Lamborghini</a></li>
+                <li><a href="#">Mazda</a></li>
+                <li><a href="#">Nissan</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Locations</h3>
+            <ul>
+                <li><a href="#">Boston</a></li>
+                <li><a href="#">Chicago</a></li>
+                <li><a href="#">Colorado</a></li>
+                <li><a href="#">Los Angeles</a></li>
+                <li><a href="#">New York</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Footer Menu</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-section footer-contact">
+            <h3>Contact</h3>
+            <p><i class="fas fa-map-marker-alt"></i> ABC Street, New York</p>
+            <p><i class="fas fa-envelope"></i> contact@yourwebsite.com</p>
+            <p><i class="fas fa-phone"></i> 123-456-7878</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Danieldev. All Rights Reserved.</p>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <a href="#" id="scrollTop">↑ Top</a>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const scrollBtn = document.getElementById("scrollTop");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 300) {
+                scrollBtn.style.display = "block"; // Show button when scrolling down
+            } else {
+                scrollBtn.style.display = "none"; // Hide button at top
+            }
+        });
+    });
+</script>
+
+
+</body>
+</html>

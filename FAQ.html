@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- favicon -->
+         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+         <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+         <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="navbar-left">
+            <a href="tel:+1234567890">📞 +1234567890</a>
+            <a href="mailto:example@gmail.com">✉️ example@gmail.com</a>
+        </div>
+        <div class="navbar-right">
+            <div class="currency-dropdown">
+                <select>
+                    <option value="usd">USD ($)</option>
+                    <option value="eur">EUR (€)</option>
+                    <option value="gbp">GBP (£)</option>
+                    <option value="ngn">NGN (N)</option>
+                </select>
+            </div>
+            <div class="auth-buttons">
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+            </div>
+        </div>
+    </header>    
+
+    <nav class="main-navbar">
+        <a href="#" class="logo">
+            <div class="logo-container">
+                <i class="fa-solid fa-car"></i>  <!-- Car Icon -->
+                <span>APEX MOTORS</span>
+            </div> 
+        </a>
+    
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="listings.html">Listings</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <!-- <li>
+                <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                     <li><a href="#">location</a></li>
+                    <li><a href="#">Brand</a></li>
+                </ul>
+            </li> -->
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="faq">
+        <!-- Top Image Banner -->
+        <div class="faq-header">
+            <div class="faq-overlay">
+                <h1>Frequently Asked Questions</h1>
+                <p>Home / FAQ</p>
+            </div>
+        </div>
+
+        <!-- FAQ Content -->
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">How do I rent a car? <span class="faq-toggle">+</span></button>
+                <div class="faq-answer">
+                    <p>To rent a car, simply browse our available listings, choose a vehicle, and complete the booking process online or at our office.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Can I buy a car instead of renting? <span class="faq-toggle">+</span></button>
+                <div class="faq-answer">
+                    <p>Yes! We offer a selection of cars for sale in addition to rentals. Visit our "Cars for Sale" section to explore available options.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What documents do I need to rent a car? <span class="faq-toggle">+</span></button>
+                <div class="faq-answer">
+                    <p>You will need a valid driver's license, a government-issued ID, and a credit or debit card for payment.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Is insurance included with the rental? <span class="faq-toggle">+</span></button>
+                <div class="faq-answer">
+                    <p>Yes, basic insurance is included in all our rental cars. You can also opt for additional coverage for extra protection.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What happens if the car breaks down during the rental period? <span class="faq-toggle">+</span></button>
+                <div class="faq-answer">
+                    <p>We provide 24/7 roadside assistance. If the car breaks down, contact our support team for immediate assistance or a replacement vehicle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                const toggle = item.querySelector('.faq-toggle');
+
+                if (answer.style.display === "block") {
+                    answer.style.display = "none";
+                    toggle.textContent = "+";
+                } else {
+                    answer.style.display = "block";
+                    toggle.textContent = "-";
+                }
+            });
+        });
+    </script>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">BMW</a></li>
+                <li><a href="#">Jaguar</a></li>
+                <li><a href="#">Lamborghini</a></li>
+                <li><a href="#">Mazda</a></li>
+                <li><a href="#">Nissan</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Locations</h3>
+            <ul>
+                <li><a href="#">Boston</a></li>
+                <li><a href="#">Chicago</a></li>
+                <li><a href="#">Colorado</a></li>
+                <li><a href="#">Los Angeles</a></li>
+                <li><a href="#">New York</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Footer Menu</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-section footer-contact">
+            <h3>Contact</h3>
+            <p><i class="fas fa-map-marker-alt"></i> ABC Street, New York</p>
+            <p><i class="fas fa-envelope"></i> contact@yourwebsite.com</p>
+            <p><i class="fas fa-phone"></i> 123-456-7878</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Danieldev. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+</body>
+</html>
