@@ -19,49 +19,50 @@
 <body>
 
   <!-- Top Navbar -->
-  <header class="navbar">
-    <div class="navbar-left">
-      <a href="tel:+1234567890">📞 +1234567890</a>
-      <a href="mailto:example@gmail.com">✉️ example@gmail.com</a>
+<header class="navbar">
+  <div class="navbar-left">
+    <a href="tel:+1234567890">📞 +1234567890</a>
+    <a href="mailto:example@gmail.com">✉️ example@gmail.com</a>
+  </div>
+  <div class="navbar-right">
+    <div class="currency-dropdown">
+      <select>
+        <option value="usd">USD ($)</option>
+        <option value="eur">EUR (€)</option>
+        <option value="gbp">GBP (£)</option>
+        <option value="ngn">NGN (₦)</option>
+      </select>
     </div>
-    <div class="navbar-right">
-      <div class="currency-dropdown">
-        <select>
-          <option value="usd">USD ($)</option>
-          <option value="eur">EUR (€)</option>
-          <option value="gbp">GBP (£)</option>
-          <option value="ngn">NGN (₦)</option>
-        </select>
-      </div>
-      <div class="auth-buttons">
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
-      </div>
+    <div class="auth-buttons">
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- Main Navigation -->
-  <nav class="main-navbar">
-    <a href="#" class="logo-container">
-      <i class="fa-solid fa-car"></i>
-      <span>APEX MOTORS</span>
-    </a>
+<!-- Main Navigation -->
+<nav class="main-navbar" style="background-color: black;">
+  <a href="#" class="logo-container">
+    <i class="fa-solid fa-car"></i>
+    <span>APEX MOTORS</span>
+  </a>
 
-    <div class="menu-icon" onclick="toggleMenu()">
-      <i class="fa-solid fa-bars"></i>
-    </div>
+  <!-- Hamburger Icon -->
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
 
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="listings.html">Listings</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="FAQ.html">FAQ</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
+  <!-- Navigation Links -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="listings.html">Listings</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="FAQ.html">FAQ</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
 
 

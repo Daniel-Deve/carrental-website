@@ -63,7 +63,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background-color: black;
   padding: 15px 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   position: relative;
@@ -92,11 +92,12 @@ body {
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  transition: all 0.3s ease;
 }
 
 .nav-links li a {
   text-decoration: none;
-  color: #333;
+  color: white;
   font-weight: bold;
   font-size: 16px;
   transition: color 0.3s;
@@ -110,11 +111,13 @@ body {
   display: none;
   font-size: 28px;
   cursor: pointer;
-  color: orangered;
+  color: white; 
   user-select: none;
   z-index: 1100;
 }
 
+
+/* ===== Responsive for Mobile ===== */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -128,15 +131,20 @@ body {
 
   .main-navbar {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 15px 10px;
+  }
+
+  .menu-icon {
+    display: block;
+    align-self: flex-end;
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
-    background: white;
+    background: black;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-radius: 5px;
     margin-top: 10px;
@@ -149,12 +157,11 @@ body {
 
   .nav-links li {
     margin: 10px 0;
-  }
-
-  .menu-icon {
-    display: block;
+    text-align: left;
+    padding-left: 20px;
   }
 }
+
 
 
 
@@ -890,7 +897,7 @@ footer {
 }
 
 .footer-section h3 {
-  color: #ffb400;
+  color: orangered;
   font-size: 0.9rem;
   margin-bottom: 6px;
 }
@@ -922,7 +929,7 @@ footer {
 
 .footer-contact i {
   margin-right: 4px;
-  color: #ffb400;
+  color: orangered;
   font-size: 0.8rem;
 }
 
@@ -933,7 +940,7 @@ footer {
 }
 
 .social-icons a:hover {
-  color: #ffb400;
+  color: orangered;
 }
 
 .footer-bottom {
@@ -948,9 +955,9 @@ footer {
 #scrollTop {
   display: block;
   text-align: center;
-  margin-top: 10px;
-  font-size: 0.75rem;
-  color: #ffb400;
+  margin-top: 15px;
+  font-size: 0.96rem;
+  color: orangered;
   text-decoration: none;
 }
 
@@ -1845,7 +1852,7 @@ footer {
   }
   
   button:hover {
-    background-color: orange;
+    background-color: orangered;
   }
   
   .form-footer {
