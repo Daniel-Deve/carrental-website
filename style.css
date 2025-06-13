@@ -116,6 +116,10 @@ body {
   z-index: 1100;
 }
 
+.logo-container{
+  text-decoration: none;
+}
+
 
 /* ===== Responsive for Mobile ===== */
 @media (max-width: 768px) {
